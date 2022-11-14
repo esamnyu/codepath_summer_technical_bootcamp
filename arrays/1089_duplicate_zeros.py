@@ -6,7 +6,6 @@ class Solution:
         """
         hasDupe = False 
         length_arr =len(arr)
-        
         for i in range(len(arr)):
             if arr[i] == 0:
                 if hasDupe:
