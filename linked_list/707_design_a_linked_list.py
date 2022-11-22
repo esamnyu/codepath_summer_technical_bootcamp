@@ -27,6 +27,11 @@ class MyLinkedList(object):
 
     
     def addAtHead(self, val: int) -> None:
+        curr = Node(val) 
+        curr.next = self.head 
+        self.head = curr
+        
+        self.size +=1
         
 
     def addAtTail(self, val: int) -> None:
