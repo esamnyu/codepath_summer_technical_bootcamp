@@ -1,4 +1,4 @@
-# mport the List class from the typing module, which allows you to use List[int] as a type hint for the nums parameter in your majorityElement method.
+# Import the List class from the typing module, which allows you to use List[int] as a type hint for the nums parameter in your majorityElement method.
 from typing import List
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
