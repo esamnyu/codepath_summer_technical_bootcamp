@@ -26,6 +26,8 @@ class Solution:
                     longest_sequence = current_sequence
 
                 # 6. Reset current_sequence to 1 for the next sequence
+                # Important for cases like [1, 2, 3, 5, 6, 7]
+                # We are comparing pairs of consecutive numbers and the last pair is (3, 5), this evaluates to 5 > 3 + 1
                 current_sequence = 1
 
         # 7. After the loop, do one final check to see if the last sequence is the longest
@@ -39,3 +41,4 @@ class Solution:
 if __name__ == "__main__":
     s = Solution()
     print(s.longestConsecutive([100, 4, 200, 1, 3, 2]))  # Should print 4
+    print(s.longestConsecutive([1, 2, 3, 5, 6, 7])) # Should print 3, not 5
